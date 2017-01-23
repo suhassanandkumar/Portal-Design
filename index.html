@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" ng-app="party">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Protal Design</title>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="lib/css/main.min.css"/>
+  <link rel="stylesheet" href="lib/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+  <!-- SCRIPTS -->
+  <script src="lib/js/main.min.js"></script>
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/dashboard.js"></script>
+</head>
+<body ng-controller="MasterCtrl">
+  <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar">
+        <li class="sidebar-main">
+          <a>
+            My Party
+            
+          </a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#">User <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+		<li class="sidebar-list">
+          <a href="#">Icons for party <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+		<li class="sidebar-list">
+          <a href="#">Product <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+		<li class="sidebar-list">
+          <a href="#">Price <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+		<li class="sidebar-list">
+          <a href="#">Admin <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+      <div class="page-content">
+
+        <!-- Header Bar -->
+        <div class="row header">
+          <div class="col-xs-12">
+            <div class="user pull-right">
+              <div class="item dropdown" uib-dropdown>
+                <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                  <img src="img/avatar.jpg">
+				  <span> User ID </span>
+                </a>
+              </div>
+           
+            </div>
+            <div class="meta">
+              <div class="page">
+                <div class="form-group">
+					<div class="input-group">
+					  <input type="text" class="form-control" id="search" placeholder="Search">
+					  <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+					</div>
+				  </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Header Bar -->
+
+        <!-- Main Content -->
+        <div ui-view></div>
+
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+</body>
+</html>

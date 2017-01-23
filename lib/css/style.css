@@ -1,0 +1,47 @@
+/* new css */
+.user{position:relative}
+.user span{    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #fff;
+    padding: 1px 0px;
+}
+
+.t_header{}
+.t_header .t_title{}
+.t_header .t_call{}
+.t_header .t_mail{}
+.t_header .btn{    margin: 0px 8px;}
+.t_header .fa{margin:0px 5px;}
+.t_header .t_mail .h4{float:right}
+
+.grid_row{}
+.grid_row .count.bg-warning{background:orange}
+.grid_row .count.bg-danger{background:#d9534f}
+.grid_row .count.bg-success{background:#5cb85c}
+.grid_row .count.bg-info{background:#4c7da7}
+
+.grid_row .count{    padding: 5px 10px;
+    border-radius: 50%;
+    float: right;
+    height: 30px;
+    margin-top: -5px;
+    color: #fff;}
+
+.grid_data{
+    background: white;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px #ccc;	
+}
+.grid_data div{margin:0px;}
+.grid_data p{    margin: 0px;
+    padding: 10px 0px;
+    font-size: 20px;}
+.grid_table{}
+.grid_table .btn-sm{    padding: 2px 5px;
+    font-size: 10px;}
+.grid_table	.widget-body{min-height:200px;}
+@media(min-width:992px){
+	.grid_row .col-lg-2{width:20%}	
+}
